@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercise 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+
+    			$("#animation_1").click(function(){
+
+        			$("img").animate({
+
+            				left: '250px',
+            				height: '+=150px',
+            				width: '+=150px'
+        			});
+    			});
+
+		
+   			 $("#animation_2").click(function(){
+        			$("img").animate({
+            				height: 'toggle'
+        			}, 2000);
+   			 });
+		});
+	</script>
+</head>
+
+<body>
+	<h1>Web Programming</h1>
+
+	<p>❖Download a picture from Web</p>
+	<p>❖Add some animations to the picture</p>
+
+	<a><img src="https://raw.githubusercontent.com/fcu-d0449199/WP-HW1/master/D0449199%20Web%20%E4%BD%9C%E6%A5%AD1.jpg" width="100" height="100"></a>
+	
+	<p></p>
+	<button id = "animation_1">animation 1(放大)</button>
+	<button id = "animation_2">animation 2(收放)</button>
+</body>
+</html>
